@@ -1,0 +1,16 @@
+{
+  "code": "tasti.salesreport",
+  "name": "Sales Report",
+  "description": "Get sales reports",
+  "version": "0.1",
+  "author": "Tasti.com",
+  "icon": {
+    "class": "fa fa-chart-bar",
+    "backgroundColor": "#e26b9f",
+    "color": "#FFF"
+  },
+  "homepage": "https://tasti.com",
+  "require": {
+
+  }
+}

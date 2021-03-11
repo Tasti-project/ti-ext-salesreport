@@ -1,0 +1,17 @@
+{
+  "name": "tasti/salesreport",
+  "type": "igniter-extension",
+  "keywords": ["tastyigniter", "sales", "report", "tasti"],
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Davinder Singh",
+          "email": "davinder@tasti.com"
+      }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "^6.0",
+    "maatwebsite/excel": "^3.1"
+  }
+}
