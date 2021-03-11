@@ -1,7 +1,7 @@
 <?php
 $config['list']['filter'] = [
     'search' => [
-        'prompt' => 'lang:admin::lang.reports.text_filter_search',
+        'prompt' => 'lang:tasti.salesreport::default.text_filter_search',
         'mode' => 'all',
     ],
     'scopes' => [
@@ -48,7 +48,7 @@ $config['list']['filter'] = [
 $config['list']['toolbar'] = [
     'buttons' => [
         'delete' => [
-            'label' => 'lang:admin::lang.button_download',
+            'label' => 'lang:tasti.salesreport::default.text_download',
             'class' => 'btn btn-primary',
             'href' => admin_url('tasti/salesreport/views?download=1'),
         ],
@@ -94,22 +94,22 @@ $config['list']['columns'] = [
         'type' => 'text'
     ],
     'subtotal' => [
-        'label' => 'lang:admin::lang.reports.text_order_subtotal',
+        'label' => 'lang:tasti.salesreport::default.text_order_subtotal',
         'type' => 'currency',
         'sortable' => FALSE,
     ],
     'paymentFee' => [
-        'label' => 'lang:admin::lang.reports.text_payment_fee',
+        'label' => 'lang:tasti.salesreport::default.text_payment_fee',
         'type' => 'currency',
         'sortable' => FALSE,
     ],
     'tax_text' => [
-        'label' => 'lang:admin::lang.reports.text_tax',
+        'label' => 'lang:tasti.salesreport::default.text_tax',
         'type' => 'text',
         'sortable' => FALSE,
     ],
     'order_total' => [
-        'label' => 'lang:admin::lang.reports.text_order_total',
+        'label' => 'lang:tasti.salesreport::default.text_order_total',
         'type' => 'currency',
     ],
 

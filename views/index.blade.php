@@ -11,27 +11,27 @@
                     <hr>
                 @if(!empty($gross_total['subtotal']))
                 <div class="d-flex justify-content-between">
-                    <h5>@lang('lang:admin::lang.reports.text_order_subtotal')</h5>
+                    <h5>@lang('lang:tasti.salesreport::default.text_order_subtotal')</h5>
                     <h5>{{ currency_format($gross_total['subtotal']) }}</h5>
                 </div>
                 @endif
                 <hr>
                 @if(!empty($gross_total['payment_fee']))
                 <div class="d-flex justify-content-between text-muted">
-                    <h5>@lang('lang:admin::lang.reports.text_payment_fee')</h5>
+                    <h5>@lang('lang:tasti.salesreport::default.text_payment_fee')</h5>
                     <h5>{{ currency_format($gross_total['payment_fee']) }}</h5>
                 </div>
                 @endif
                 @if(!empty($gross_total['tax']))
                 <div class="d-flex justify-content-between text-muted">
-                    <h5>@lang('lang:admin::lang.reports.text_tax')</h5>
+                    <h5>@lang('lang:tasti.salesreport::default.text_tax')</h5>
                     <h5>{{ currency_format($gross_total['tax']) }}</h5>
                 </div>
                 @endif
                 <hr>
                 @if(!empty($gross_total['total']))
                 <div class="d-flex justify-content-between">
-                    <h5>@lang('lang:admin::lang.reports.text_order_total')</h5>
+                    <h5>@lang('lang:tasti.salesreport::default.text_order_total')</h5>
                     <h5>{{ currency_format($gross_total['total']) }}</h5>
                 </div>
                 @endif
@@ -53,7 +53,7 @@
             <hr>
             @if(!empty($gross_total['total']))
             <div class="d-flex justify-content-between">
-                <h5>@lang('lang:admin::lang.reports.text_total')</h5>
+                <h5>@lang('lang:tasti.salesreport::default.text_total')</h5>
                 <h5>{{ currency_format($gross_total['total']) }}</h5>
             </div>
             @endif

@@ -23,7 +23,7 @@ class ReportsExport implements FromView
 
     public function view(): View
     {
-        return view('admin::_exports.sales_report', [
+        return view('tasti.salesreport::sales_report', [
             'columns' => $this->columns,
             'records' => $this->records,
             'gross' => $this->gross
