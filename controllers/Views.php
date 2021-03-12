@@ -18,7 +18,7 @@ class Views extends \Admin\Classes\AdminController
         'list' => [
             'model' => 'Tasti\SalesReport\Models\SalesReport',
             'title' => 'Reports',
-            'emptyMessage' => 'lang:admin::lang.orders.text_empty',
+            'emptyMessage' => 'lang:tasti.salesreport::default.text_empty',
             'defaultSort' => ['order_id', 'DESC'],
             'configFile' => 'salesreport',
             'showCheckboxes' => false,

@@ -6,7 +6,7 @@ $config['list']['filter'] = [
     ],
     'scopes' => [
         'location' => [
-            'label' => 'lang:admin::lang.text_filter_location',
+            'label' => 'lang:tasti.salesreport::default.text_filter_location',
             'type' => 'select',
             'conditions' => 'location_id = :filtered',
             'modelClass' => 'Admin\Models\Locations_model',
@@ -14,31 +14,31 @@ $config['list']['filter'] = [
             'locationAware' => 'hide',
         ],
         // 'status' => [
-        //     'label' => 'lang:admin::lang.text_filter_status',
+        //     'label' => 'lang:tasti.salesreport::default.text_filter_status',
         //     'type' => 'select',
         //     'conditions' => 'status_id = :filtered',
         //     'modelClass' => 'Admin\Models\Statuses_model',
         //     'options' => 'getDropdownOptionsForOrder',
         // ],
         'type' => [
-            'label' => 'lang:admin::lang.orders.text_filter_order_type',
+            'label' => 'lang:tasti.salesreport::default.text_filter_order_type',
             'type' => 'select',
             'conditions' => 'order_type = :filtered',
             'options' => [
-                'dinein' => 'lang:admin::lang.orders.text_dinein',
-                'delivery' => 'lang:admin::lang.orders.text_delivery',
-                'collection' => 'lang:admin::lang.orders.text_collection',
+                'dinein' => 'lang:tasti.salesreport::default.text_dinein',
+                'delivery' => 'lang:tasti.salesreport::default.text_delivery',
+                'collection' => 'lang:tasti.salesreport::default.text_collection',
             ],
         ],
         'payment' => [
-            'label' => 'lang:admin::lang.orders.text_filter_payment',
+            'label' => 'lang:tasti.salesreport::default.text_filter_payment',
             'type' => 'select',
             'conditions' => 'payment = :filtered',
             'modelClass' => 'Admin\Models\Payments_model',
             'options' => 'getDropdownOptions',
         ],
         'date' => [
-            'label' => 'lang:admin::lang.text_filter_date',
+            'label' => 'lang:tasti.salesreport::default.text_filter_date',
             'type' => 'daterange',
             'conditions' => 'order_date >= CAST(:filtered_start AS DATE) AND order_date <= CAST(:filtered_end AS DATE)',
         ],
@@ -57,11 +57,11 @@ $config['list']['toolbar'] = [
 
 $config['list']['columns'] = [
     'order_id' => [
-        'label' => 'lang:admin::lang.column_id',
+        'label' => 'lang:tasti.salesreport::default.column_id',
         'searchable' => TRUE,
     ],
     'location' => [
-        'label' => 'lang:admin::lang.orders.column_location',
+        'label' => 'lang:tasti.salesreport::default.column_location',
         'relation' => 'location',
         'select' => 'location_name',
         'searchable' => TRUE,
@@ -69,26 +69,26 @@ $config['list']['columns'] = [
         'invisible' => TRUE,
     ],
     'full_name' => [
-        'label' => 'lang:admin::lang.orders.column_customer_name',
+        'label' => 'lang:tasti.salesreport::default.column_customer_name',
         'select' => "concat(first_name, ' ', last_name)",
         'searchable' => TRUE,
     ],
     'order_type_name' => [
-        'label' => 'lang:admin::lang.label_type',
+        'label' => 'lang:tasti.salesreport::default.label_type',
         'type' => 'text',
         'sortable' => FALSE,
     ],
     'order_date' => [
-        'label' => 'lang:admin::lang.orders.column_date',
+        'label' => 'lang:tasti.salesreport::default.column_date',
         'type' => 'date',
         'searchable' => TRUE,
     ],
     'order_time' => [
-        'label' => 'lang:admin::lang.orders.column_time',
+        'label' => 'lang:tasti.salesreport::default.column_time',
         'type' => 'time',
     ],
     'status_name' => [
-        'label' => 'lang:admin::lang.label_status',
+        'label' => 'lang:tasti.salesreport::default.label_status',
         'relation' => 'status',
         'select' => 'status_name',
         'type' => 'text'
@@ -114,7 +114,7 @@ $config['list']['columns'] = [
     ],
 
     'date_added' => [
-        'label' => 'lang:admin::lang.column_date_added',
+        'label' => 'lang:tasti.salesreport::default.column_date_added',
         'type' => 'timesince',
         'invisible' => TRUE,
     ],
